@@ -10,7 +10,7 @@ import {
   UseGuards,
   UseInterceptors,
 } from '@nestjs/common';
-import JwtAuthenticationGuard from '../auth/guard/Jwt-authentication.guard';
+import { JwtAuthenticationGuard } from '../auth/guard/Jwt-authentication.guard';
 import { OrderService } from './order.service';
 import { CreateOrderDto } from './dto/createOrder.dto';
 import { plainToClass } from 'class-transformer';

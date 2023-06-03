@@ -9,7 +9,7 @@ import {
   Request,
   UseGuards,
 } from '@nestjs/common';
-import JwtAuthenticationGuard from '../auth/guard/Jwt-authentication.guard';
+import { JwtAuthenticationGuard } from '../auth/guard/Jwt-authentication.guard';
 import { CartService } from './cart.service';
 import { plainToClass } from 'class-transformer';
 import { CartItemDto } from './dto/cartItem.dto';

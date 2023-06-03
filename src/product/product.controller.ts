@@ -17,7 +17,7 @@ import { FileInterceptor } from '@nestjs/platform-express';
 import { CloudinaryService } from '../cloudinary/cloudinary.service';
 import { ProductService } from './product.service';
 import { RoleCheckInterceptor } from '../interceptor/checkrole';
-import JwtAuthenticationGuard from '../auth/guard/Jwt-authentication.guard';
+import { JwtAuthenticationGuard } from '../auth/guard/Jwt-authentication.guard';
 import { UpdateProductDto } from './dto/updateProduct.dto';
 @Controller('product')
 export class ProductController {

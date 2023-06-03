@@ -10,7 +10,7 @@ import {
   Delete,
 } from '@nestjs/common';
 import { CreateReviewDto } from './dto/createReview.dto';
-import JwtAuthenticationGuard from '../auth/guard/Jwt-authentication.guard';
+import { JwtAuthenticationGuard } from '../auth/guard/Jwt-authentication.guard';
 import { ReviewService } from './review.service';
 
 @Controller('review')
