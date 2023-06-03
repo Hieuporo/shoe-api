@@ -7,7 +7,8 @@ import {
   Get,
 } from '@nestjs/common';
 import { UserService } from './user.service';
-import { JwtAuthenticationGuard } from '../auth/guard/Jwt-authentication.guard';
+import { JwtAuthenticationGuard } from './../auth/guard/jwt-authentication.guard';
+
 import { UpdateUserDto } from './dto/updateUser.dto';
 import { plainToClass } from 'class-transformer';
 

@@ -5,7 +5,8 @@ import {
   NotFoundException,
   UseGuards,
 } from '@nestjs/common';
-import { JwtAuthenticationGuard } from '../auth/guard/Jwt-authentication.guard';
+import { JwtAuthenticationGuard } from './../auth/guard/jwt-authentication.guard';
+
 import { PrismaService } from '../prisma/prisma.service';
 import { CartService } from '../cart/cart.service';
 import { CreateOrderDto } from './dto/createOrder.dto';
