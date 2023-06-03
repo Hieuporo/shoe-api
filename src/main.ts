@@ -6,9 +6,7 @@ import * as cookieParser from 'cookie-parser';
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
   app.use(cookieParser());
-  app.enableCors({
-    origin: ['http://localhost:5173', 'https://shoe-app-0ipl.onrender.com'],
-  });
+  app.enableCors();
   app.useGlobalPipes(new ValidationPipe());
   await app.listen(5000);
 }
