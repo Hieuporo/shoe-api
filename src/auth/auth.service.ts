@@ -76,7 +76,7 @@ export class AuthService {
     res.cookie('token', token, {});
     user.password = undefined;
 
-    return res.send({ message: 'Logged in succefully' });
+    return res.send({ token });
   }
 
   private async verifyPassword(candidatePassword: string, password: string) {
